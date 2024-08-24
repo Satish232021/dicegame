@@ -14,6 +14,36 @@ body {
   background-color: #393E46;
 }
 
+button{
+  background-color:#06fe38; /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s ease 0.2s;
+}
+button:hover{
+  color: aliceblue;
+
+}
+
+button::before{
+  content: '';
+  top:0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #4ECCA3;
+  position: absolute;
+  transition: 2s ease;
+  z-index: -1;
+}
+button:hover::before{
+  width: 100%;
+}
 h1 {
   margin: 30px;
   font-family: 'Lobster', cursive;
