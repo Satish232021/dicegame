@@ -1,3 +1,21 @@
+body{
+  background: url(./images/dice.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: -1;
+}
+
 .container {
   width: 70%;
   margin: auto;
@@ -15,7 +33,7 @@ body {
 }
 
 button{
-  background-color:#06fe38; /* Semi-transparent background */
+  background-color:#06fe38;
   padding: 20px;
   border-radius: 20px;
   font-size: 30px;
